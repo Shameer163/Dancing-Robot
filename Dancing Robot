@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background: black;
+    color: white;
+}
+.main_div{
+    height: 500px;
+    width: 400px;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 100px;
+
+}
+.face{
+    height: 150px;
+    width: 150px;
+    background: chartreuse;
+    margin-left: 120px;
+    margin-top: 30px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+}
+.leye,.reye{
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50%;
+}
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.main_div:hover .face{
+    animation: changeface 2s 10 ease-in-out;
+}
+@keyframes changeface{
+    0%{transform: translateX(20px);}
+    25%{transform: translateX(-20px);}
+    50%{transform: translateX(20px);}
+    75%{transform: translateX(-20px);}
+    100%{transform: translateX(20px);}
+}
+.main_div:hover .leye{
+    animation: changeleye 2s 10 ease-in-out;
+}
+.main_div:hover .reye{
+    animation: changereye 2s 10 ease-in-out;
+}   
+@keyframes changeleye{
+    10%{background: black;}
+    50%{background: yellow;}
+    100%{background: red;}
+}
+@keyframes changereye{
+    10%{background: black;}
+    50%{background: yellow;}
+    100%{background: red;}
+}   
+.larm{
+    height: 113px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 50%;
+    margin-left: -60px;
+}
+.rarm{
+    height: 113px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 50%;
+    margin-right: -50px;
+}
+.main_div:hover .larm{
+    animation: changelarm 2s 10 ease-in-out;
+}
+@keyframes changelarm{
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(20px);}
+    75%{transform: translateY(-20px);}
+    100%{transform: translateY(20px);}
+}
+.main_div:hover .rarm{
+    animation: changerarm 2s 10 ease-in-out;
+}
+@keyframes changerarm{
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(20px);}
+    75%{transform: translateY(-20px);}
+    100%{transform: translateY(20px);}
+}
+.mid{
+    height: 150px;
+    width: 140px;
+    background: chartreuse;
+    margin-top: 50%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    position: absolute;
+}
+.main_div:hover .mid{
+    animation: changemid 2s 10 ease;
+}
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.main_div:hover .center{
+    animation: changecenter 2s 10 ease-in-out;
+}
+@keyframes changecenter{
+    0%{transform: translateX(20px);}
+    25%{transform: translateX(-20px);}
+    50%{transform: translateX(20px);}
+    75%{transform: translateX(-20px);}
+    100%{transform: translateX(20px);}
+}
+.lleg{
+    height: 100px;
+    width: 20px;
+    background: chartreuse;
+    /* margin-top: 50%; */
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    /* position: absolute; */
+}
+.main_div:hover .lleg{
+    animation: changelleg 2s 10 ease-in-out;
+}
+@keyframes changelleg{
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(20px);}
+    75%{transform: translateY(-20px);}
+    100%{transform: translateY(20px);}
+}
+.rleg{
+    height: 100px;
+    width: 20px;
+    background: chartreuse;
+    /* margin-top: 50%; */
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    /* position: absolute; */
+}
+.main_div:hover .rleg{
+    animation: changerleg 2s 10 ease-in-out;
+}
+@keyframes changerleg{
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(20px);}
+    75%{transform: translateY(-20px);}
+    100%{transform: translateY(20px);}
+}
+
+.legs{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+    </style>
+
+</head>
+<body>
+    <center><h2> DANCIND BOT!!</h2></center>
+    <div class="main_div">
+        <div class="face">
+            <div class="eyes">
+                <div class="leye"></div>
+                <div class="reye"></div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="larm"></div>
+            <div class="mid"></div>
+            <div class="rarm"></div>
+        </div>
+        <div class="legs">
+            <div class="lleg"></div>
+            <div class="rleg"></div>
+        </div>
+    </div>
+</body>
+</html>
